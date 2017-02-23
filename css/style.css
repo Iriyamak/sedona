@@ -77,7 +77,27 @@ html {
 		max-width:100%;
 	}
 	.centerfix{
-		max-width: 1170px;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
 /* --------------- базовые настройки ---------*/
+/* --------------- shop ---------*/
+
+a.arrow {
+    display: inline-block;
+    margin: 0 10px;
+    font-size:0;
+}
+.arrow::before {
+    content: "";
+    border: 20px solid #0074d9;
+    border-right-width: 10px;
+    border-left-width: 10px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    display:inline-block;
+}
+.arrow-up::before {border-top-width:0;
+}
+.arrow-down::before {border-bottom-width:0;
+}
