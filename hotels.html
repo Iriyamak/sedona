@@ -24,28 +24,29 @@
   <main class="centerfix">
     <div class="selection">
       <form method="post" action="">
-        <fieldset>
-          <legend>ИНФРАСТРУКТУРА:</legend>
-          <ul>
-            <li><input type="checkbox" name="" id="facilities1">
-              <label for="facilities1">БАССЕЙН</label></li>
-            <li><input type="checkbox" name="" id="facilities2">
-              <label for="facilities2">ПАРКОВКА</label></li>
-            <li><input type="checkbox" name="" id="facilities3">
-              <label for="facilities3">Wi-Fi</label></li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Тип жилья:</legend>
-          <ul>
-            <li><input type="checkbox" name="" id="type1">
-              <label for="type1">ГостиницА</label></li>
-            <li><input type="checkbox" name="" id="type2">
-              <label for="type2">МОТЕЛЬ</label></li>
-            <li><input type="checkbox" name="" id="type3">
-              <label for="type3">АПАРТАМЕНТЫ</label></li>
-          </ul>
-        </fieldset>
+          <fieldset>
+            <legend>ИНФРАСТРУКТУРА:</legend>
+            <ul>
+              <li><input type="checkbox" name="" id="facilities1">
+                <label for="facilities1">БАССЕЙН</label></li>
+              <li><input type="checkbox" name="" id="facilities2">
+                <label for="facilities2">ПАРКОВКА</label></li>
+              <li><input type="checkbox" name="" id="facilities3">
+                <label for="facilities3">Wi-Fi</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li><input type="checkbox" name="" id="type1">
+                <label for="type1">ГостиницА</label></li>
+              <li><input type="checkbox" name="" id="type2">
+                <label for="type2">МОТЕЛЬ</label></li>
+              <li><input type="checkbox" name="" id="type3">
+                <label for="type3">АПАРТАМЕНТЫ</label></li>
+            </ul>
+          </fieldset>
+          <fieldset></fieldset>
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
           <input type="range" name="" value=""><br>
@@ -55,7 +56,7 @@
       </form>
     </div>
     <div class="sort">
-        <h2>Найдено: 3</h2>
+        <b>Найдено: 3</b>
         <p>СОРТИРОВКА:</p>
         <p>ПО ЦЕНЕ</p>
         <p>ПО ТИПУ</p>
@@ -63,44 +64,50 @@
         <a class="arrow arrow-up" href="#">по возрастанию</a>
         <a class="arrow arrow-down" href="#">по убыванию</a>
     </div>
-    <section>
+    <section class="catalog">
       <article class="item">
+        <img src="img/hotels-1.jpg" alt="">
         <div class="item-description">
-          <img src="img/hotels-1.jpg" alt="">
-          <h2>Amara Resort & Spa</h2>
-          <p><span>Гостиница</span><span>ОТ 3500 Р.</span></p>
-          <a href="#" class="btn">ПОДРОБНЕЕ</a>
-          <button type="button" class="btn">ЗАБРОНИРОВАТЬ</button>
-        </div>
-        <div class="rating">
-          <div class="stars"></div>
-          <p>Рейтинг: 8,5</p>
+          <div class="item-description_left">
+            <h2>Amara Resort & Spa</h2>
+            <p><span>Гостиница </span><span>ОТ 3500 Р.</span></p>
+            <a href="#" class="btn">ПОДРОБНЕЕ</a>
+            <button type="button" class="btn">ЗАБРОНИРОВАТЬ</button>
+          </div>
+          <div class="rating">
+            <div class="stars"></div>
+            <p>Рейтинг: 8,5</p>
+          </div>
         </div>
       </article>
       <article class="item">
+        <img src="img/hotels-2.jpg" alt="">
         <div class="item-description">
-          <img src="img/hotels-2.jpg" alt="">
-          <h2>Desert Quail Inn</h2>
-          <p><span>Мотель</span><span>ОТ 2000 Р.</span></p>
-          <a href="#" class="btn">ПОДРОБНЕЕ</a>
-          <button type="button" class="btn">ЗАБРОНИРОВАТЬ</button>
-        </div>
-        <div class="rating">
-          <div class="stars"></div>
-          <p>Рейтинг: 8,9</p>
+          <div class="item-description_left">
+            <h2>Desert Quail Inn</h2>
+            <p><span>Мотель </span><span>ОТ 2000 Р.</span></p>
+            <a href="#" class="btn">ПОДРОБНЕЕ</a>
+            <button type="button" class="btn">ЗАБРОНИРОВАТЬ</button>
+          </div>
+          <div class="rating">
+            <div class="stars"></div>
+            <p>Рейтинг: 8,9</p>
+          </div>
         </div>
       </article>
       <article class="item">
+        <img src="img/hotels-3.jpg" alt="">
         <div class="item-description">
-          <img src="img/hotels-3.jpg" alt="">
-          <h2>Villas at Poco Diablo</h2>
-          <p><span>Апартаменты</span><span>ОТ 4000 Р.</span></p>
-          <a href="#" class="btn">ПОДРОБНЕЕ</a>
-          <button type="button" class="btn">ЗАБРОНИРОВАТЬ</button>
-        </div>
-        <div class="rating">
-          <div class="stars"></div>
-          <p>Рейтинг: 9,2</p>
+          <div class="item-description_left">
+            <h2>Villas at Poco Diablo</h2>
+            <p><span>Апартаменты </span><span>ОТ 4000 Р.</span></p>
+            <a href="#" class="btn">ПОДРОБНЕЕ</a>
+            <button type="button" class="btn">ЗАБРОНИРОВАТЬ</button>
+          </div>
+          <div class="rating">
+            <div class="stars"></div>
+            <p>Рейтинг: 9,2</p>
+          </div>
         </div>
       </article>
     </section>
