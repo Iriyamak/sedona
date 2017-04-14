@@ -1,84 +1,51 @@
-/* --------------- reset.css --------------- */
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;                               /* обнуляем отступы и убираем бордюры */
-	vertical-align: baseline;          /* приводим все к одной базовой линии */
-	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
-	font-size: 100%;                     /* размер шрифта всем одинаковый */
-}
-	a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
-		margin:0;
-		padding:0;
-		font-size:100%;
-		vertical-align:baseline;
-		background:transparent;
-		outline:none;
-	}
-	table {						/* устраняем отступы между ячейками таблицы */
-		border-collapse: collapse;
-		border-spacing: 0;
-	}
-	td, td, img {
-		vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
-	}
-	input, select, button, textarea {
-		margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
-		font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
-		outline: none;
-	}
-	input[type="text"], input[type="password"], textarea {
-		padding: 0; 				/* убираем внутренние отступы для текстовых полей */
-	}
-	input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
-		vertical-align: bottom;
-	}
-	input[type="radio"] {
-		vertical-align: text-bottom;
-	}
-	sub {
-		vertical-align: sub;
-		font-size: smaller;
-	}
-	sup {
-		vertical-align: super;
-		font-size: smaller;
-	}
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display:block;
-	}
-	ul {
-		 list-style:none;
-	}
 /* --------------- базовые настройки ---------*/
 html {
 	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
 }
 	body {
+		margin: 0;
+		padding: 0;
 		color: #000;
-		background: #fff;
+		background: #f2f2f2;
 		text-align: left;
 		min-height: 100%;
-		font-family: 'PT Sans Narrow', sans-serif;
+		font-family: 'PT Sans', sans-serif;
+		font-weight: 400;
 		font-size: 14px;
-		line-height: 24px;
+		line-height: 21px;
 		text-transform: uppercase;
 	}
 	a, a:visited { /* порядок правил для ссылок имеет значение */
 		text-decoration: none;
 		color: #000;
 	}
-	a:hover {
+		a:hover {
+			color: #81b3d2;
+		}
+		a:focus,
+		a:active {
+			color: #000;
+			opacity: 0.3;
+		}
+	.active{
+		color: #766357;
 	}
-	a:focus, a:active {
-	}
+		.active:hover{
+			color: #604e43;
+		}
+		.active:focus,
+		.active:active{
+			color: #766357;
+			opacity: 0.3;
+		}
 	img {
 		max-width: 100%;
+		display: block;
 	}
 	.centerfix{
 		max-width: 1200px;
 		margin: 0 auto;
+		background: #fff;
 	}
 	/* --------------- index ---------*/
 	.main-header{
@@ -87,28 +54,67 @@ html {
 			.header-top .logo{
 				position: absolute;
 				top:0;
-				left:44%;
+				left:44.17%;
 			}
 			.main-menu ul{
+				margin: 0;
+				padding: 15px 4.17%;
+				list-style: none;
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				justify-content: space-between;
+				-webkit-box-pack: justify;
+				    -ms-flex-pack: justify;
+				        justify-content: space-between;
 			}
+				.main-menu li{
+					margin: 0;
+					padding: 0;
+				}
+					.main-menu ul li a{
+						padding: 10px 20px 20px;
+						font-weight: bold;
+					}
 			.header-bottom-text{
 				position: absolute;
-				top:15%;
+				top:22%;
 				left:30.8%;
 			}
 	.slogan{
 		text-align: center;
+		padding: 60px 0;
+		line-height: 26px;
 	}
+		.slogan h2{
+			font-size: 21px;
+			font-weight: bold;
+		}
 	.features{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: flex-start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 	}
 		.feature-item{
 		 width: 33.33%;
 		 text-align: center;
+		 padding: 42px;
+		 box-sizing: border-box;
 		}
+			.promo{
+				background-color: #81b3d2;
+				color: #fff;
+			}
+				.promo h2{
+					font-size: 21px;
+					font-weight: bold;
+				}
+			.utility{
+
+			}
+
 
 		.map-adaptive{/* метод для размещения любого контента адаптивною Св-ва для родителя*/
 			position: relative;
@@ -131,8 +137,12 @@ html {
 				left:13.8%;
 			}
 	.main-footer{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 
 /* --------------- shop ---------*/
@@ -141,13 +151,19 @@ html {
 	background-repeat: no-repeat;
 }
 	.selection form{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	color: #fff;
 }
 .sort{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 	.sort a.arrow {
 	    display: inline-block;
@@ -168,15 +184,30 @@ html {
 		.arrow-down::before {border-bottom-width:0;
 		}
 .catalog{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 	.item{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: flex-start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 	}
 		.item-description{
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			justify-content: space-between;
-			flex-grow: 2;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			-webkit-box-flex: 2;
+			    -ms-flex-positive: 2;
+			        flex-grow: 2;
 		}
